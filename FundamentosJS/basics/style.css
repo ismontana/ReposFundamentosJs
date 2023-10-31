@@ -1,0 +1,67 @@
+/* Reset default margin and padding */
+body, 
+input,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+/* Background color and text styles */
+body {
+  background-color: #1f06aa;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.container {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #a7a7a7;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the content horizontally */
+  justify-content: center; /* Center the content vertically */
+  text-align: center;
+}
+
+/* Input styles */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #2420eb;
+}
+
+/* Button styles */
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #724caf;
+  cursor: pointer;
+}
+
+/* Hover effect on buttons */
+button:hover {
+  background-color: #522f8b;
+}
+
+/* Disabled state for result input */
+#result {
+  background-color: #eee;
+  cursor: not-allowed;
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    width: 90%;
+  }
+}

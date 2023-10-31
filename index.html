@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Roboto:wght@100&@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #151E3F;
+}
+
+:root{
+    --color: #17a2ff;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column; /* Cambio a dirección de columna */
+    align-items: center;
+    gap: 25px;
+    height: 100vh;
+}
+
+.btn{
+    position: relative;
+    padding: 20px 50px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 10px;
+    text-indent: 10px;
+    z-index: 2;
+}
+
+        .btn-2{
+    border: 3px solid;
+}
+
+.btn-2:hover{
+    background-color: #001a2b;
+    box-shadow: 0 0 20px var(--color);
+    border-color: var(--color);
+}
+
+.btn-2 span:nth-child(n){
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 3px solid;
+    transition: all 0.6s ease;
+}
+
+.btn-2 span:nth-child(1){
+    right: 10%;
+    top: -10px;
+    background-color: #fff;
+}
+
+.btn-2 span:nth-child(2){
+    left: 10%;
+    bottom: -10px;
+}
+
+.btn-2:hover span:nth-child(1){
+    right: 80%;
+    transform: rotate(90deg);
+    color: var(--color);
+    background-color: var(--color);
+    
+}
+
+.btn-2:hover span:nth-child(2){
+    left: 80%;
+    transform: rotate(90deg);
+    color: var(--color);
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Javascript DOM, APIs y Canvas</h1>
+    <br>
+    <div class="contenedor">
+        <a href="./FundamentosJs/dom/colorsrgb.html" class="btn btn-2">RGB Random 
+            <span></span>
+            <span></span>
+        </a>
+        <a href="./FundamentosJs/dom/colorsrgba.html" class="btn btn-2">RGBA con inputs 
+            <span></span>
+            <span></span>
+        </a>
+        <a href="./FundamentosJs/dom/galeria.html" class="btn btn-2"> Galería
+            <span></span>
+            <span></span>
+        </a>
+        <a href="./FundamentosJs/dom/tareas.html" class="btn btn-2"> Lista de Tareas
+            <span></span>
+            <span></span>
+        </a>
+        <a href="./GraphicsCanvas/indexDibujo.html" class="btn btn-2"> Dibujo
+            <span></span>
+            <span></span>
+        </a>
+        <a href="./GraphicsCanvas/indexBolita.html" class="btn btn-2"> Rebota
+            <span></span>
+            <span></span>
+        </a>
+        <a href="./GraphicsCanvas/indexDirections.html" class="btn btn-2"> Animación de un emoji comiendo muchos
+            <span></span>
+            <span></span>
+        </a>
+        <a href="./GraphicsCanvas/indexSnake.html" class="btn btn-2"> Snake
+            <span></span>
+            <span></span>
+        </a>
+        <a href="./RickandMorty/index.html" class="btn btn-2"> Rick and Morty
+            <span></span>
+            <span></span>
+        </a>
+        <a href="./ApiClima/index.html" class="btn btn-2"> API Clima
+            <span></span>
+            <span></span>
+        </a>
+    </div>
+</body>
+</html>
